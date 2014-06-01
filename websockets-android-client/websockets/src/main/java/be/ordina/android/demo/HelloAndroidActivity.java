@@ -67,7 +67,11 @@ public class HelloAndroidActivity extends Activity {
             public void onClick(View view) {
                 String text = _textToSend.getText().toString();
                 try {
-                    mConnection.sendTextMessage(text);
+                    if(mConnection != null){
+                        mConnection.sendTextMessage(text);
+                    }else{
+                        quickToast("No websocket connection available");
+                    }
                 } catch (WebsocketNotConnectedException e) {
                     quickToast("Websocket not connected");
                 }
@@ -79,7 +83,9 @@ public class HelloAndroidActivity extends Activity {
     }
 
     private void closeWebsocket() {
-        mConnection.disconnect();
+        if(mConnection != null){
+            mConnection.disconnect();
+        }
     }
 
     @Override
@@ -123,6 +129,12 @@ public class HelloAndroidActivity extends Activity {
 
     }
 
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        closeWebsocket();
+    }
 
     private void quickToast(String text) {
         Toast.makeText(this, text, Toast.LENGTH_LONG).show();
