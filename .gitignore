@@ -4,3 +4,9 @@ websockets-android-client/websockets/default.properties
 websockets-android-client/websockets/websockets.iml
 websockets-android-client/websockets-it/default.properties
 websockets-android-client/websockets-it/websockets-it.iml
+websockets-android-client/websockets/target
+spring-boot-samples/spring-boot-sample-websocket/target
+spring-boot-samples/spring-boot-sample-websocket/.settings
+spring-boot-samples/spring-boot-sample-websocket/.classpath
+spring-boot-samples/spring-boot-sample-websocket/.project
+
