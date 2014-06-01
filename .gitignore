@@ -1,0 +1,6 @@
+websockets-parent.iml
+websockets-android-client/.idea
+websockets-android-client/websockets/default.properties
+websockets-android-client/websockets/websockets.iml
+websockets-android-client/websockets-it/default.properties
+websockets-android-client/websockets-it/websockets-it.iml

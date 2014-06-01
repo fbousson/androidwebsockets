@@ -1,0 +1,3 @@
+mvn install:install-file -Dfile=autobahn-0.5.0/autobahn-0.5.0.jar -DgroupId=be.ordina.demo.autobahn -DartifactId=autobahn -Dversion=0.5.0 -Dpackaging=jar
+mvn install:install-file -Dfile=autobahn-0.5.0/jackson-core-asl-1.9.7.jar -DgroupId=be.ordina.demo.autobahn -DartifactId=jackson-core-asl -Dversion=1.9.7 -Dpackaging=jar
+mvn install:install-file -Dfile=autobahn-0.5.0/jackson-mapper-asl-1.9.7.jar -DgroupId=be.ordina.demo.autobahn -DartifactId=jackson-mapper-asl -Dversion=1.9.7 -Dpackaging=jar

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Websockets demo</string>
+    <string name="hello">Hello websockets!</string>
+    <string name="action_settings">Settings</string>
+    <string name="websockets_demo">Websockets demo</string>
+    <string name="server_location">Server location</string>
+    <string name="btn_connect">Connect</string>
+    <string name="btn_disconnect">Disconnect</string>
+    <string name="btn_send_message">Send message</string>
+    <string name="received_message">Received message</string>
+
+</resources>
